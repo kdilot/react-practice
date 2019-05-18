@@ -1,0 +1,92 @@
+@import "color.scss";
+
+.tab__content {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  display: none;
+}
+.tab__content__selected {
+  opacity: 1;
+  width: 100vw;
+  height: 80vh;
+  display: block;
+}
+.tab__content__top {
+  position: absolute;
+  top: 20vh;
+}
+.item__selected {
+  background: $activeColor;
+}
+.tab__list {
+  display: grid;
+  width: 100vw;
+  height: 20vh;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  color: $fontColor;
+  cursor: pointer;
+}
+[class*="tab__item"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tab__item__top {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    background: $fontColor;
+    height: 4px;
+    border-radius: 10px;
+    -webkit-transition-property: left right;
+    transition-property: left right;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  &:hover:before {
+    left: 0;
+    right: 0;
+  }
+}
+.tab__item__bottom {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    background: $fontColor;
+    height: 4px;
+    border-radius: 10px;
+    -webkit-transition-property: left right;
+    transition-property: left right;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  &:hover:before {
+    left: 0;
+    right: 0;
+  }
+}
