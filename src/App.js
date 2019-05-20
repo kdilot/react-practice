@@ -1,10 +1,13 @@
 import React from 'react';
-import './App.css';
-import { Frame } from 'sampleview';
+import { PosContainer } from 'redux/container';
+import { Route } from 'react-router-dom';
 
 function App() {
   return (
-    <Frame />
+    <>
+     <Route exact path='/' component={PosContainer} />
+     <Route path='/pos' component={PosContainer} />
+    </>
   );
 }
 
