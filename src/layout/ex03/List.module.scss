@@ -1,0 +1,20 @@
+@import "color.scss";
+
+.list__hover {
+  width: 100vw;
+  color: $fontColor;
+}
+.list__item {
+  padding: 5px;
+}
+.item__eo:nth-child(even) {
+  background: $evenColor;
+}
+.item__eo:hover,
+.item__basic:hover {
+  background: $hoverColor;
+}
+.item__basic {
+  padding: 10px 5px;
+  border-bottom: 1px solid $activeColor;
+}

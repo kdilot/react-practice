@@ -1,0 +1,12 @@
+.item__form {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  p {
+    margin: 0;
+    text-align: center;
+  }
+  p:first-child {
+    text-align: left;
+    padding-left: 2em;
+  }
+}

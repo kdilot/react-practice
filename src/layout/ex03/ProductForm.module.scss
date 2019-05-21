@@ -1,0 +1,29 @@
+@import "color.scss";
+
+.product__form {
+  width: 100%;
+  height: 100%;
+}
+.product__form div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+.product__form div:nth-child(odd) {
+  height: 65%;
+  word-break: break-all;
+}
+.product__form div:nth-child(even) {
+  height: 35%;
+  align-items: flex-start;
+}
+.product__form h2,
+h3 {
+  text-align: center;
+  color: $fontColor;
+  margin: 0;
+}
+.product__form:hover {
+  background: $hoverColor;
+}
