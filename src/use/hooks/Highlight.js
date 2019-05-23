@@ -1,13 +1,15 @@
 import { useState, useEffect } from 'react';
 
-const Highlight = (props) => {
+const Highlight = ({ event, condition = true, timeout = 1000 }) => {
   const [highlight, setHighlight] = useState(false)
   useEffect(() => {
-    setHighlight(true)
-    setTimeout(() => {
-      setHighlight(false)
-    }, 700);
-  }, [props])
+    if (condition) {
+      setHighlight(true)
+      setTimeout(() => {
+        setHighlight(false)
+      }, timeout)
+    }
+  }, [event, condition, timeout])
   return (
     highlight
   )
