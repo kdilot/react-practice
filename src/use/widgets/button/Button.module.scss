@@ -1,4 +1,4 @@
-@import "color.scss";
+@import "../defaultColor.scss";
 
 @mixin btn-style($padding, $minWidth, $minHeight) {
   padding: 0 $padding;
@@ -6,20 +6,20 @@
   min-height: $minHeight;
 }
 [class*="btn"] {
-  background-color: $btnColor;
+  background-color: $color1;
   border: 1px;
   margin: 2px;
   font-size: 1em;
-  color: $fontColor;
+  color: $font;
 }
 [class*="btn"]:focus {
   outline: none;
 }
 [class*="btn"]:hover {
-  background: $hoverColor;
+  background: $color5;
 }
 [class*="btn"]:active {
-  background: $activeColor;
+  background: $color4;
 }
 .btn__rd {
   border-radius: 15px;
