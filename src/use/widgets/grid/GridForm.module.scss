@@ -1,0 +1,25 @@
+@import "../defaultColor.scss";
+
+.grid__form {
+  color: $font;
+  display: grid;
+  grid-auto-rows: 1fr;
+  padding: 1rem;
+}
+.grid__form::before {
+  content: "";
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+.grid__form > *:first-child {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+.grid__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid $dark2;
+}
