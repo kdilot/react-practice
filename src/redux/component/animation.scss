@@ -1,0 +1,136 @@
+@mixin ani($name, $time, $type: ease-in-out) {
+  -webkit-animation: #{$name} $time $type;
+  --moz--animation: #{$name} $time $type;
+  animation: #{$name} $time $type;
+}
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+@include keyframes(in) {
+  0% {
+    opacity: 0;
+    background: rgba(22, 255, 22, 0.1);
+  }
+  20% {
+    opacity: 0.2;
+    background: rgba(22, 255, 22, 0.2);
+  }
+  40% {
+    opacity: 0.4;
+    background: rgba(22, 255, 22, 0.3);
+  }
+  60% {
+    opacity: 0.6;
+    background: rgba(22, 255, 22, 0.4);
+  }
+  80% {
+    opacity: 0.8;
+    background: rgba(22, 255, 22, 0.5);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@include keyframes(out) {
+  0% {
+    opacity: 1;
+    background: rgba(225, 22, 22, 0.5);
+  }
+  20% {
+    opacity: 0.8;
+    background: rgba(225, 22, 22, 0.4);
+  }
+  40% {
+    opacity: 0.6;
+    background: rgba(225, 22, 22, 0.3);
+  }
+  60% {
+    opacity: 0.4;
+    background: rgba(225, 22, 22, 0.2);
+  }
+  80% {
+    opacity: 0.2;
+    background: rgba(225, 22, 22, 0.1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@include keyframes(plus) {
+  0% {
+    background: rgba(22, 255, 22, 0.1);
+  }
+  10% {
+    background: rgba(22, 255, 22, 0.2);
+  }
+  20% {
+    background: rgba(22, 255, 22, 0.3);
+  }
+  30% {
+    background: rgba(22, 255, 22, 0.4);
+  }
+  40% {
+    background: rgba(22, 255, 22, 0.5);
+  }
+  500% {
+    background: rgba(22, 255, 22, 0.55);
+  }
+  600% {
+    background: rgba(22, 255, 22, 0.5);
+  }
+  70% {
+    background: rgba(22, 255, 22, 0.4);
+  }
+  80% {
+    background: rgba(22, 255, 22, 0.3);
+  }
+  90% {
+    background: rgba(22, 255, 22, 0.2);
+  }
+  100% {
+    background: rgba(22, 255, 22, 0.1);
+  }
+}
+@include keyframes(minus) {
+  0% {
+    background: rgba(225, 22, 22, 0.1);
+  }
+  10% {
+    background: rgba(225, 22, 22, 0.2);
+  }
+  20% {
+    background: rgba(225, 22, 22, 0.3);
+  }
+  30% {
+    background: rgba(225, 22, 22, 0.4);
+  }
+  40% {
+    background: rgba(225, 22, 22, 0.5);
+  }
+  500% {
+    background: rgba(225, 22, 22, 0.55);
+  }
+  600% {
+    background: rgba(225, 22, 22, 0.5);
+  }
+  70% {
+    background: rgba(225, 22, 22, 0.4);
+  }
+  80% {
+    background: rgba(225, 22, 22, 0.3);
+  }
+  90% {
+    background: rgba(225, 22, 22, 0.2);
+  }
+  100% {
+    background: rgba(225, 22, 22, 0.1);
+  }
+}
