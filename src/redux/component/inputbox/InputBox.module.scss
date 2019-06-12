@@ -1,0 +1,23 @@
+@import "../defaultColor.scss";
+
+.input__box {
+  border: $color4;
+  background: $color4;
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input:focus {
+  background: $color5;
+}
+.input__round {
+  border-radius: 0.5rem;
+}
