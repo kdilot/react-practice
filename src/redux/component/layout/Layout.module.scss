@@ -1,0 +1,18 @@
+@import "../defaultColor.scss";
+
+.layout__grid {
+  padding: 3rem;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 8fr 1fr;
+  grid-gap: 0.5rem;
+}
+.layout__child {
+  border-collapse: collapse;
+  border: 0.1rem solid $color4;
+}
+.layout__child:first-child {
+  grid-column: 1;
+  grid-row: 1 / 4;
+}
