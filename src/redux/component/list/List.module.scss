@@ -1,0 +1,21 @@
+@import "../defaultColor.scss";
+
+.list__hover {
+  width: 100%;
+  color: $font;
+}
+.item__eo:nth-child(even) {
+  background: $color4;
+}
+.item__eo:hover,
+.item__basic:hover {
+  background: $color1;
+}
+.item__eo,
+.item__basic {
+  border-bottom: 0.05rem solid $color4;
+}
+.item__eo:last-child,
+.item__basic:last-child {
+  border-bottom: none;
+}
