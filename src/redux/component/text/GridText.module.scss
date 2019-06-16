@@ -1,0 +1,20 @@
+@import "../defaultColor.scss";
+
+.itemText {
+  height: 100%;
+}
+.itemText h3, h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-break: break-word;
+  text-align: center;
+  color: $font;
+}
+.itemText h3 {
+  padding: 0 1rem;
+  height: 60%;
+}
+.itemText h4 {
+  height: 40%;
+}
