@@ -1,0 +1,31 @@
+@import "../defaultColor.scss";
+@import "../animation.scss";
+
+.market__text {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 7fr 2fr;
+  background: $color4;
+  p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0 0.5rem;
+    color: $font;
+  }
+  p:first-child {
+    padding-left: 1rem;
+  }
+  p:last-child {
+    border-left: 2px solid $color2;
+    justify-content: center;
+  }
+}
+.market_plue {
+  @include ani(plus, 1.5s);
+  font-weight: bold;
+}
+.market_minus {
+  @include ani(minus, 1.5s);
+  font-weight: bold;
+}
