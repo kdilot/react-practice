@@ -1,0 +1,41 @@
+@import "../defaultColor.scss";
+@import "../animation.scss";
+
+.item__form,
+.tax__form {
+  display: grid;
+  grid-template-columns: 4fr 1.5fr 2fr 1fr;
+  align-items: center;
+  p {
+    margin: 1rem 0.1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  p:first-child {
+    justify-content: flex-start;
+    padding-left: 2rem;
+  }
+}
+.item__form {
+  p:nth-child(even) {
+    cursor: pointer;
+  }
+}
+.tax__form {
+  grid-template-columns: 3fr 2fr;
+  p:first-child {
+    justify-content: center;
+    font-weight: bold;
+  }
+}
+.item__in {
+  @include ani("in", 1s);
+}
+.item__change {
+  @include ani("in", 1s);
+}
+.item__out {
+  @include ani("out", 1s);
+}
