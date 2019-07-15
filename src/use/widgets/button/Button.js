@@ -5,20 +5,35 @@ import styles from './Button.module.scss';
 //  <Button title={'btn'} size={'lg'} onClick={() => { console.log('event') }} />
 
 const Button = ({
-  title = 'btn',
-  size = 'md',
-  full = false,
-  round = false,
-  fontSize = '1rem',
-  fontWeight,
   background,
   border,
-  onClick
+  children = 'btn',
+  fontSize,
+  fontWeight,
+  full = false,
+  margin,
+  onClick,
+  padding,
+  radius,
+  size = 'md',
+  styleName,
 }) => {
   return (
     <>
-      <button className={`${size === 'lg' ? styles.btn__lg : size === 'sm' ? styles.btn__sm : styles.btn__md} ${full && styles.btn__full} ${round ? styles.btn__rd : ''}`} style={{ fontSize: fontSize, background: background, fontWeight: fontWeight, border: border }} onClick={onClick}>
-        {title}
+      <button
+        className={` ${styles.btn} ${size === 'lg' ? styles.btn__lg : size === 'sm' ? styles.btn__sm : styles.btn__md} ${full && styles.btn__full} ${styles[styleName]} `}
+        style={{
+          background: background,
+          border: border,
+          borderRadius: radius,
+          fontSize: fontSize,
+          fontWeight: fontWeight,
+          margin: margin,
+          padding: padding,
+        }}
+        onClick={onClick}
+      >
+        {children}
       </button>
     </>
   )

@@ -1,41 +1,274 @@
-@import "../defaultColor.scss";
-
 @mixin btn-style($padding, $minWidth, $minHeight) {
   padding: 0 $padding;
   min-width: $minWidth;
   min-height: $minHeight;
 }
-[class*="btn"] {
-  background-color: $color1;
+.btn {
+  background-color: #606060;
   border: 1px;
   font-size: 1rem;
-  color: $font;
+  color: white;
+  cursor: pointer;
+  margin: 1rem;
+  text-transform: capitalize;
 }
-[class*="btn"]:focus {
+.btn:focus {
   outline: none;
-}
-[class*="btn"]:hover {
-  background: $color5;
-}
-[class*="btn"]:active {
-  background: $color4;
-}
-.btn__rd {
-  border-radius: 15px;
 }
 .btn__sm {
   font-size: 0.9rem;
-  @include btn-style(0.5em, 2em, 2em);
+  @include btn-style(0.5rem, 2rem, 2rem);
 }
 .btn__md {
-  @include btn-style(0.7em, 2.3em, 2.3em);
+  @include btn-style(0.7rem, 2.3rem, 2.3rem);
 }
 .btn__lg {
-  font-size: 1.1rem;
-  @include btn-style(1em, 2.5em, 2.5em);
+  font-size: 1.2rem;
+  @include btn-style(1.3rem, 2.5rem, 2.5rem);
 }
 .btn__full {
   width: 100%;
   height: 100%;
   margin: 0;
+}
+.btn__fade:hover,
+.btn__fade:focus,
+.btn__fade:active {
+  background: #61dafb;
+  color: #20232a;
+  transition-duration: 0.5s;
+}
+
+.btn__fade__lr {
+  transition-property: color;
+  transition-duration: 0.5s;
+  transform: translateZ(0);
+}
+.btn__fade__lr:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #61dafb;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: 0 100%;
+  transition-duration: 0.5s;
+}
+.btn__fade__lr:hover,
+.btn__fade__lr:focus,
+.btn__fade__lr:active {
+  color: #20232a;
+}
+.btn__fade__lr:hover:before,
+.btn__fade__lr:focus:before,
+.btn__fade__lr:active:before {
+  transform: scaleX(1);
+}
+
+.btn__fade__rl {
+  transition-property: color;
+  transition-duration: 0.5s;
+  transform: translateZ(0);
+}
+.btn__fade__rl:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #61dafb;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: 100% 0;
+  transition-duration: 0.5s;
+}
+.btn__fade__rl:hover,
+.btn__fade__rl:focus,
+.btn__fade__rl:active {
+  color: #20232a;
+}
+.btn__fade__rl:hover:before,
+.btn__fade__rl:focus:before,
+.btn__fade__rl:active:before {
+  transform: scaleX(1);
+}
+
+.btn__fade__tb {
+  transition-property: color;
+  transition-duration: 0.5s;
+  transform: translateZ(0);
+}
+.btn__fade__tb:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #61dafb;
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: 100% 0;
+  transition-duration: 0.5s;
+}
+.btn__fade__tb:hover,
+.btn__fade__tb:focus,
+.btn__fade__tb:active {
+  color: #20232a;
+}
+.btn__fade__tb:hover:before,
+.btn__fade__tb:focus:before,
+.btn__fade__tb:active:before {
+  transform: scaleY(1);
+}
+
+.btn__fade__bt {
+  transition-property: color;
+  transition-duration: 0.5s;
+  transform: translateZ(0);
+}
+.btn__fade__bt:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #61dafb;
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: 0 100%;
+  transition-duration: 0.5s;
+}
+.btn__fade__bt:hover,
+.btn__fade__bt:focus,
+.btn__fade__bt:active {
+  color: #20232a;
+}
+.btn__fade__bt:hover:before,
+.btn__fade__bt:focus:before,
+.btn__fade__bt:active:before {
+  transform: scaleY(1);
+}
+
+.btn__fade__ho {
+  transition-property: color;
+  transition-duration: 0.5s;
+  transform: translateZ(0);
+}
+.btn__fade__ho:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #61dafb;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: 50% 0;
+  transition-duration: 0.5s;
+}
+.btn__fade__ho:hover,
+.btn__fade__ho:focus,
+.btn__fade__ho:active {
+  color: #20232a;
+}
+.btn__fade__ho:hover:before,
+.btn__fade__ho:focus:before,
+.btn__fade__ho:active:before {
+  transform: scaleX(1);
+}
+
+.btn__fade__hi {
+  transition-property: color;
+  transition-duration: 0.5s;
+  transform: translateZ(0);
+  background: #61dafb;
+}
+.btn__fade__hi:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #606060;
+  z-index: -1;
+  transform: scaleX(1);
+  transform-origin: 50%;
+  transition-duration: 0.5s;
+}
+.btn__fade__hi:hover,
+.btn__fade__hi:focus,
+.btn__fade__hi:active {
+  color: #20232a;
+}
+.btn__fade__hi:hover:before,
+.btn__fade__hi:focus:before,
+.btn__fade__hi:active:before {
+  transform: scaleX(0);
+}
+
+.btn__fade__vo {
+  transition-property: color;
+  transition-duration: 0.5s;
+  transform: translateZ(0);
+}
+.btn__fade__vo:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #61dafb;
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: 0 50%;
+  transition-duration: 0.5s;
+}
+.btn__fade__vo:hover,
+.btn__fade__vo:focus,
+.btn__fade__vo:active {
+  color: #20232a;
+}
+.btn__fade__vo:hover:before,
+.btn__fade__vo:focus:before,
+.btn__fade__vo:active:before {
+  transform: scaleY(1);
+}
+
+.btn__fade__vi {
+  transition-property: color;
+  transition-duration: 0.5s;
+  transform: translateZ(0);
+  background: #61dafb;
+}
+.btn__fade__vi:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #606060;
+  z-index: -1;
+  transform: scaleY(1);
+  transform-origin: 50%;
+  transition-duration: 0.5s;
+}
+.btn__fade__vi:hover,
+.btn__fade__vi:focus,
+.btn__fade__vi:active {
+  color: #20232a;
+}
+.btn__fade__vi:hover:before,
+.btn__fade__vi:focus:before,
+.btn__fade__vi:active:before {
+  transform: scaleY(0);
 }
