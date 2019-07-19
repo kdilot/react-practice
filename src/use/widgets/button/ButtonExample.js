@@ -69,6 +69,24 @@ const ButtonExample = () => {
         </Button>
       </div>
       <div>
+        <h1>shape</h1>
+        <Button styleName={'btn__sizeup'}>
+          size-up
+        </Button>
+        <Button styleName={'btn__sizedown'}>
+          size-down
+        </Button>
+        <Button styleName={'btn__round'}>
+          round
+        </Button>
+        <Button styleName={'btn__push'}>
+          push
+        </Button>
+        <Button styleName={'btn__pull'}>
+          pull
+        </Button>
+      </div>
+      <div>
         <h1>test</h1>
         <Button styleName={'test'}>
           test
