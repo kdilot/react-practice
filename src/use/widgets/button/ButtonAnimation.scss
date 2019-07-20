@@ -1,0 +1,47 @@
+@keyframes pushEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    background: #61dafb;
+    color: #20232a;
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pullEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    background: #61dafb;
+    color: #20232a;
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes outlineShrink {
+  100% {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes outlineSpread {
+  100% {
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    opacity: 0;
+  }
+}
