@@ -1,13 +1,16 @@
+@import "./ButtonAnimation.scss";
+@import "./Color.scss";
+
 @mixin btn-style($padding, $minWidth, $minHeight) {
   padding: 0 $padding;
   min-width: $minWidth;
   min-height: $minHeight;
 }
 .btn {
-  background: #606060;
+  background: $btnColor;
   border: 1px;
   font-size: 1rem;
-  color: white;
+  color: $font;
   cursor: pointer;
   margin: 1rem;
   text-transform: capitalize;
@@ -32,8 +35,8 @@
   margin: 0;
 }
 .btn__fade:hover {
-  background: #61dafb;
-  color: #20232a;
+  background: $hover;
+  color: $hoverFont;
   transition-duration: 0.5s;
 }
 
@@ -49,14 +52,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #61dafb;
+  background: $hover;
   z-index: -1;
   transform: scaleX(0);
   transform-origin: 0 100%;
   transition-duration: 0.5s;
 }
 .btn__fade__lr:hover {
-  color: #20232a;
+  color: $hoverFont;
 }
 .btn__fade__lr:hover:before {
   transform: scaleX(1);
@@ -74,14 +77,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #61dafb;
+  background: $hover;
   z-index: -1;
   transform: scaleX(0);
   transform-origin: 100% 0;
   transition-duration: 0.5s;
 }
 .btn__fade__rl:hover {
-  color: #20232a;
+  color: $hoverFont;
 }
 .btn__fade__rl:hover:before {
   transform: scaleX(1);
@@ -99,14 +102,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #61dafb;
+  background: $hover;
   z-index: -1;
   transform: scaleY(0);
   transform-origin: 100% 0;
   transition-duration: 0.5s;
 }
 .btn__fade__tb:hover {
-  color: #20232a;
+  color: $hoverFont;
 }
 .btn__fade__tb:hover:before {
   transform: scaleY(1);
@@ -124,14 +127,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #61dafb;
+  background: $hover;
   z-index: -1;
   transform: scaleY(0);
   transform-origin: 0 100%;
   transition-duration: 0.5s;
 }
 .btn__fade__bt:hover {
-  color: #20232a;
+  color: $hoverFont;
 }
 .btn__fade__bt:hover:before {
   transform: scaleY(1);
@@ -149,14 +152,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #61dafb;
+  background: $hover;
   z-index: -1;
   transform: scaleX(0);
   transform-origin: 50% 0;
   transition-duration: 0.5s;
 }
 .btn__fade__ho:hover {
-  color: #20232a;
+  color: $hoverFont;
 }
 .btn__fade__ho:hover:before {
   transform: scaleX(1);
@@ -166,7 +169,7 @@
   transition-property: color;
   transition-duration: 0.5s;
   transform: translateZ(0);
-  background: #61dafb;
+  background: $hover;
 }
 .btn__fade__hi:before {
   content: "";
@@ -182,7 +185,7 @@
   transition-duration: 0.5s;
 }
 .btn__fade__hi:hover {
-  color: #20232a;
+  color: $hoverFont;
 }
 .btn__fade__hi:hover:before {
   transform: scaleX(0);
@@ -200,14 +203,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #61dafb;
+  background: $hover;
   z-index: -1;
   transform: scaleY(0);
   transform-origin: 0 50%;
   transition-duration: 0.5s;
 }
 .btn__fade__vo:hover {
-  color: #20232a;
+  color: $hoverFont;
 }
 .btn__fade__vo:hover:before {
   transform: scaleY(1);
@@ -217,7 +220,7 @@
   transition-property: color;
   transition-duration: 0.5s;
   transform: translateZ(0);
-  background: #61dafb;
+  background: $hover;
 }
 .btn__fade__vi:before {
   content: "";
@@ -233,7 +236,7 @@
   transition-duration: 0.5s;
 }
 .btn__fade__vi:hover {
-  color: #20232a;
+  color: $hoverFont;
 }
 .btn__fade__vi:hover:before {
   transform: scaleY(0);
@@ -252,7 +255,7 @@
   right: 0;
   bottom: 0;
   height: 5px;
-  background: #61dafb;
+  background: $hover;
   z-index: -1;
   transform: scaleX(0);
   transform-origin: 0 100%;
@@ -275,7 +278,7 @@
   right: 0;
   bottom: 0;
   height: 5px;
-  background: #61dafb;
+  background: $hover;
   z-index: -1;
   transform: scaleX(0);
   transform-origin: 100% 0;
@@ -298,7 +301,7 @@
   right: 0;
   bottom: 0;
   height: 5px;
-  background: #61dafb;
+  background: $hover;
   z-index: -1;
   transform: scaleX(0);
   transform-origin: 50% 0;
@@ -321,7 +324,7 @@
   right: 0;
   bottom: 0;
   height: 5px;
-  background: #61dafb;
+  background: $hover;
   z-index: -1;
   transform: scaleX(0);
   transform-origin: 0 100%;
@@ -344,7 +347,7 @@
   right: 0;
   bottom: 0;
   height: 5px;
-  background: #61dafb;
+  background: $hover;
   z-index: -1;
   transform: scaleX(0);
   transform-origin: 100% 0;
@@ -367,7 +370,7 @@
   right: 0;
   bottom: 0;
   height: 5px;
-  background: #61dafb;
+  background: $hover;
   z-index: -1;
   transform: scaleX(0);
   transform-origin: 50% 0;
@@ -378,13 +381,13 @@
 }
 
 .btn__round {
-  color: white;
+  color: $font;
   transition-duration: 0.5s;
   border-radius: 0;
 }
 .btn__round:hover {
-  background: #61dafb;
-  color: #20232a;
+  background: $hover;
+  color: $hoverFont;
   transition-duration: 0.5s;
   border-radius: 15px;
 }
@@ -393,8 +396,8 @@
   transition-duration: 0.5s;
 }
 .btn__sizeup:hover {
-  background: #61dafb;
-  color: #20232a;
+  background: $hover;
+  color: $hoverFont;
   transform: scale(1.2);
   transition-duration: 0.5s;
 }
@@ -403,28 +406,85 @@
   transition-duration: 0.5s;
 }
 .btn__sizedown:hover {
-  background: #61dafb;
-  color: #20232a;
+  background: $hover;
+  color: $hoverFont;
   transform: scale(0.8);
   transition-duration: 0.5s;
 }
 
-.test:hover {
-  // transform: scale(1.2);
-  // transition-duration: 0.5s;
-  animation: ttt 0.5s;
+.btn__pull:hover {
+  animation: pullEffect 0.5s;
 }
 
-@keyframes ttt {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    background: #61dafb;
-    color: #20232a;
-    transform: scale(1.2);
-  }
+.btn__push:hover {
+  animation: pushEffect 0.5s;
+}
+
+.btn__outline__shrink {
+  position: relative;
+}
+.btn__outline__shrink:before {
+  position: absolute;
+  content: "";
+  border: 5px solid $btnColor;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  opacity: 0;
+
+  transition-property: top, left, right, bottom;
+  transition-duration: 0.5s;
+}
+.btn__outline__shrink:hover:before {
+  animation: outlineShrink 0.5s infinite;
+}
+
+.btn__outline__spread {
+  position: relative;
+}
+.btn__outline__spread:before {
+  position: absolute;
+  content: "";
+  border: 5px solid $btnColor;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+
+  transition-property: top, left, right, bottom;
+  transition-duration: 0.5s;
+}
+.btn__outline__spread:hover:before {
+  animation: outlineSpread 0.5s infinite;
+}
+
+.btn__test {
+  position: relative;
+}
+.btn__test:before {
+  position: absolute;
+  content: "";
+  border: 5px solid $btnColor;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+
+  transition-property: top, left, right, bottom;
+  transition-duration: 0.5s;
+}
+.btn__test:hover:before {
+  animation: outlineSpread 0.5s infinite;
+}
+@keyframes test {
   100% {
-    transform: scale(1);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
   }
 }
