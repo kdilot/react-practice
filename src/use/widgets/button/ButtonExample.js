@@ -19,71 +19,89 @@ const ButtonExample = () => {
       </div>
       <div>
         <h1>fade</h1>
-        <Button styleName={'btn__fade'}>
+        <Button styleName={'fade'}>
           fade
         </Button>
-        <Button styleName={'btn__fade__lr'}>
+        <Button styleName={'fade__lr'}>
           left-to-right
         </Button>
-        <Button styleName={'btn__fade__rl'}>
+        <Button styleName={'fade__rl'}>
           right-to-left
         </Button>
-        <Button styleName={'btn__fade__tb'}>
+        <Button styleName={'fade__tb'}>
           top-to-bottom
         </Button>
-        <Button styleName={'btn__fade__bt'}>
+        <Button styleName={'fade__bt'}>
           bottom-to-top
         </Button>
-        <Button styleName={'btn__fade__ho'}>
+        <Button styleName={'fade__ho'}>
           horizontal-out
         </Button>
-        <Button styleName={'btn__fade__hi'}>
+        <Button styleName={'fade__hi'}>
           horizontal-in
         </Button>
-        <Button styleName={'btn__fade__vo'}>
+        <Button styleName={'fade__vo'}>
           vertical-out
         </Button>
-        <Button styleName={'btn__fade__vi'}>
+        <Button styleName={'fade__vi'}>
           vertical-in
         </Button>
       </div>
       <div>
         <h1>top / bottom line</h1>
-        <Button styleName={'btn__topline__lr'}>
+        <Button styleName={'topline__lr'}>
           topline-left-to-right
         </Button>
-        <Button styleName={'btn__topline__rl'}>
+        <Button styleName={'topline__rl'}>
           topline-right-to-left
         </Button>
-        <Button styleName={'btn__topline__ho'}>
+        <Button styleName={'topline__ho'}>
           topline-horizontal-out
         </Button>
-        <Button styleName={'btn__bottomline__lr'}>
+        <Button styleName={'bottomline__lr'}>
           bottomline-left-to-right
         </Button>
-        <Button styleName={'btn__bottomline__rl'}>
+        <Button styleName={'bottomline__rl'}>
           bottomline-right-to-left
         </Button>
-        <Button styleName={'btn__bottomline__ho'}>
+        <Button styleName={'bottomline__ho'}>
           bottomline-horizontal-out
         </Button>
       </div>
       <div>
         <h1>shape</h1>
-        <Button styleName={'btn__sizeup'}>
+        <Button styleName={'sizeup'}>
           size-up
         </Button>
-        <Button styleName={'btn__sizedown'}>
+        <Button styleName={'sizedown'}>
           size-down
         </Button>
-        <Button styleName={'btn__round'}>
+        <Button styleName={'round'}>
           round
         </Button>
-        <Button styleName={'btn__push'}>
+        <Button styleName={'push'}>
           push
         </Button>
-        <Button styleName={'btn__pull'}>
+        <Button styleName={'pull'}>
           pull
+        </Button>
+      </div>
+      <div>
+        <h1>effect</h1>
+        <Button styleName={'outline__shrink'}>
+          outline-shrink
+        </Button>
+        <Button styleName={'outline__spread'}>
+          outline-spread
+        </Button>
+        <Button styleName={'shake__horizontal'}>
+          shake-horizontal
+        </Button>
+        <Button styleName={'shake__vertical'}>
+          shake-vertical
+        </Button>
+        <Button styleName={'blinking'}>
+          blinking
         </Button>
       </div>
       <div>
