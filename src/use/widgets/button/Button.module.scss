@@ -423,10 +423,14 @@
 .btn__outline__shrink {
   position: relative;
 }
+.btn__outline__shrink:hover {
+  background: $hover;
+  color: $hoverFont;
+}
 .btn__outline__shrink:before {
   position: absolute;
   content: "";
-  border: 5px solid $btnColor;
+  border: 5px solid $hover;
   top: -10px;
   left: -10px;
   right: -10px;
@@ -443,48 +447,65 @@
 .btn__outline__spread {
   position: relative;
 }
+.btn__outline__spread:hover {
+  background: $hover;
+  color: $hoverFont;
+}
 .btn__outline__spread:before {
   position: absolute;
   content: "";
-  border: 5px solid $btnColor;
+  border: 5px solid $hover;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 1;
-
+  opacity: 0;
   transition-property: top, left, right, bottom;
   transition-duration: 0.5s;
 }
 .btn__outline__spread:hover:before {
-  animation: outlineSpread 0.5s infinite;
-}
-
-.btn__test {
-  position: relative;
-}
-.btn__test:before {
-  position: absolute;
-  content: "";
-  border: 5px solid $btnColor;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   opacity: 1;
-
-  transition-property: top, left, right, bottom;
-  transition-duration: 0.5s;
-}
-.btn__test:hover:before {
   animation: outlineSpread 0.5s infinite;
 }
+
+.btn__blinking:hover {
+  background: $hover;
+  color: $hoverFont;
+  animation: blinking 0.5s infinite;
+}
+
+.btn__test:hover {
+  background: $hover;
+  color: $hoverFont;
+  animation: test 0.5s infinite;
+}
+// .btn__test:before {
+//   position: absolute;
+//   content: "";
+//   border: 5px solid $btnColor;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   opacity: 1;
+
+//   transition-property: top, left, right, bottom;
+//   transition-duration: 0.5s;
+// }
+// .btn__test:hover:before {
+//   animation: outlineSpread 0.5s infinite;
+// }
 @keyframes test {
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.4;
+  }
   100% {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 1;
+    opacity: 0.2;
   }
 }
