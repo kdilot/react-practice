@@ -468,6 +468,18 @@
   animation: outlineSpread 0.5s infinite;
 }
 
+.btn__shake__horizontal:hover {
+  background: $hover;
+  color: $hoverFont;
+  animation: shakeHor 0.3s infinite;
+}
+
+.btn__shake__vertical:hover {
+  background: $hover;
+  color: $hoverFont;
+  animation: shakeVer 0.3s infinite;
+}
+
 .btn__blinking:hover {
   background: $hover;
   color: $hoverFont;
@@ -477,35 +489,21 @@
 .btn__test:hover {
   background: $hover;
   color: $hoverFont;
-  animation: test 0.5s infinite;
+  animation: test 0.5s linear 1; 
+  animation-fill-mode: forwards;
 }
-// .btn__test:before {
-//   position: absolute;
-//   content: "";
-//   border: 5px solid $btnColor;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   opacity: 1;
 
-//   transition-property: top, left, right, bottom;
-//   transition-duration: 0.5s;
-// }
-// .btn__test:hover:before {
-//   animation: outlineSpread 0.5s infinite;
-// }
 @keyframes test {
   25% {
     opacity: 0.8;
   }
   50% {
-    opacity: 0.6;
+    opacity: 0.5;
   }
   75% {
-    opacity: 0.4;
+    opacity: 0.3;
   }
   100% {
-    opacity: 0.2;
+    opacity: 0;
   }
 }

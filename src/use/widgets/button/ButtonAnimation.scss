@@ -48,6 +48,21 @@
 
 @keyframes shakeHor {
   25% {
+    transform: translateX(3px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shakeVer {
+  25% {
     transform: translateY(3px);
   }
   50% {
@@ -61,18 +76,18 @@
   }
 }
 
-@keyframes shakeVer {
+@keyframes shakeTwist {
   25% {
-    transform: translateX(3px);
+    transform: rotate(10deg);
   }
   50% {
-    transform: translateX(0);
+    transform: rotate(0deg);
   }
   75% {
-    transform: translateX(-3px);
+    transform: rotate(-10deg);
   }
   100% {
-    transform: translateX(0);
+    transform: rotate(0deg);
   }
 }
 
