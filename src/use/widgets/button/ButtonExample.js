@@ -76,6 +76,12 @@ const ButtonExample = () => {
         <Button styleName={'sizedown'}>
           size-down
         </Button>
+        <Button styleName={'sizeSpread'}>
+          size-spread
+        </Button>
+        <Button styleName={'sizeShrink'}>
+          size-shrink
+        </Button>
         <Button styleName={'round'}>
           round
         </Button>
@@ -99,6 +105,9 @@ const ButtonExample = () => {
         </Button>
         <Button styleName={'shake__vertical'}>
           shake-vertical
+        </Button>
+        <Button styleName={'shake__twist'}>
+          shake-twist
         </Button>
         <Button styleName={'blinking'}>
           blinking
