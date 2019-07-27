@@ -480,30 +480,33 @@
   animation: shakeVer 0.3s infinite;
 }
 
+.btn__shake__twist:hover {
+  background: $hover;
+  color: $hoverFont;
+  animation: shakeTwist 0.2s infinite;
+}
+
 .btn__blinking:hover {
   background: $hover;
   color: $hoverFont;
   animation: blinking 0.5s infinite;
 }
 
+.btn__test {
+  transition-duration: 1s;
+  transform: scaleX(1);
+  transform-origin: left;
+}
 .btn__test:hover {
+  transform: scaleX(0);
   background: $hover;
   color: $hoverFont;
-  animation: test 0.5s linear 1; 
-  animation-fill-mode: forwards;
 }
 
 @keyframes test {
-  25% {
-    opacity: 0.8;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.3;
-  }
   100% {
-    opacity: 0;
+    position: relative;
+    top: 10px;
+    background: red;
   }
 }

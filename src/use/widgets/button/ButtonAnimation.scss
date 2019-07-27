@@ -1,3 +1,5 @@
+@import "./Color.scss";
+
 @keyframes pushEffect {
   0% {
     transform: scale(1);
@@ -78,13 +80,13 @@
 
 @keyframes shakeTwist {
   25% {
-    transform: rotate(10deg);
+    transform: rotate(5deg);
   }
   50% {
     transform: rotate(0deg);
   }
   75% {
-    transform: rotate(-10deg);
+    transform: rotate(-5deg);
   }
   100% {
     transform: rotate(0deg);
@@ -103,5 +105,75 @@
   }
   100% {
     opacity: 0.2;
+  }
+}
+
+@keyframes sizeShrink {
+  10% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.15);
+  }
+  30% {
+    transform: scale(1.05);
+  }
+  40% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  80% {
+    transform: scale(1.15);
+  }
+  90% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(0.80);
+    background: $hover;
+    color: $hoverFont;
+  }
+}
+
+@keyframes sizeSpread {
+  10% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(0.8);
+  }
+  40% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  60% {
+    transform: scale(0.8);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(0.9);
+  }
+  90% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.2);
+    background: $hover;
+    color: $hoverFont;
   }
 }
