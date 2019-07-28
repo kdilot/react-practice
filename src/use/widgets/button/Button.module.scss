@@ -436,7 +436,6 @@
   right: -10px;
   bottom: -10px;
   opacity: 0;
-
   transition-property: top, left, right, bottom;
   transition-duration: 0.5s;
 }
@@ -492,13 +491,23 @@
   animation: blinking 0.5s infinite;
 }
 
+.btn__sizeSpread:hover {
+  animation: sizeSpread 0.5s linear 1;
+  animation-fill-mode: forwards;
+}
+
+.btn__sizeShrink:hover {
+  animation: sizeShrink 0.5s linear 1;
+  animation-fill-mode: forwards;
+}
+
 .btn__test {
-  transition-duration: 1s;
-  transform: scaleX(1);
-  transform-origin: left;
+  transition-duration: 0.7s;
+  transform: scaleY(1);
+  transform-origin: top;
 }
 .btn__test:hover {
-  transform: scaleX(0);
+  transform: scaleY(0);
   background: $hover;
   color: $hoverFont;
 }
