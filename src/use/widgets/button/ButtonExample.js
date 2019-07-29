@@ -112,6 +112,18 @@ const ButtonExample = () => {
         <Button styleName={'blinking'}>
           blinking
         </Button>
+        <Button styleName={'hideTop'}>
+          hide-top
+        </Button>
+        <Button styleName={'hideBottom'}>
+          hide-bottom
+        </Button>
+        <Button styleName={'hideLeft'}>
+          hide-left
+        </Button>
+        <Button styleName={'hideRight'}>
+          hide-right
+        </Button>
       </div>
       <div>
         <h1>test</h1>
