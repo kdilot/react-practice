@@ -5,6 +5,7 @@ import styles from './ButtonExample.module.scss';
 const ButtonExample = () => {
   return (
     <div className={styles.wrapper}>
+      <span>Buttons</span>
       <div>
         <h1>size</h1>
         <Button size={'sm'}>
