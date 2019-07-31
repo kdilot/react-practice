@@ -501,6 +501,50 @@
   animation-fill-mode: forwards;
 }
 
+.btn__hideTop {
+  transition-duration: 0.7s;
+  transform: scaleY(1);
+  transform-origin: top;
+}
+.btn__hideTop:hover {
+  transform: scaleY(0);
+  background: $hover;
+  color: $hoverFont;
+}
+
+.btn__hideBottom {
+  transition-duration: 0.7s;
+  transform: scaleY(1);
+  transform-origin: bottom;
+}
+.btn__hideBottom:hover {
+  transform: scaleY(0);
+  background: $hover;
+  color: $hoverFont;
+}
+
+.btn__hideLeft {
+  transition-duration: 0.7s;
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.btn__hideLeft:hover {
+  transform: scaleX(0);
+  background: $hover;
+  color: $hoverFont;
+}
+
+.btn__hideRight {
+  transition-duration: 0.7s;
+  transform: scaleX(1);
+  transform-origin: right;
+}
+.btn__hideRight:hover {
+  transform: scaleX(0);
+  background: $hover;
+  color: $hoverFont;
+}
+
 .btn__test {
   transition-duration: 0.7s;
   transform: scaleY(1);

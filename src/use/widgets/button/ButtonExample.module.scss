@@ -5,4 +5,12 @@
     margin-top: 2rem;
     text-transform: capitalize;
   }
+  span {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    margin: 2rem;
+    border-bottom: 2px solid white;
+  }
 }
