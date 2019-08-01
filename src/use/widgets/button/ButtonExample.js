@@ -126,12 +126,6 @@ const ButtonExample = () => {
           hide-right
         </Button>
       </div>
-      <div>
-        <h1>test</h1>
-        <Button styleName={'test'}>
-          test
-        </Button>
-      </div>
     </div>
   );
 };
