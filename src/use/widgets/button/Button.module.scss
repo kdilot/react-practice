@@ -544,22 +544,3 @@
   background: $hover;
   color: $hoverFont;
 }
-
-.btn__test {
-  transition-duration: 0.7s;
-  transform: scaleY(1);
-  transform-origin: top;
-}
-.btn__test:hover {
-  transform: scaleY(0);
-  background: $hover;
-  color: $hoverFont;
-}
-
-@keyframes test {
-  100% {
-    position: relative;
-    top: 10px;
-    background: red;
-  }
-}
