@@ -21,6 +21,11 @@
 .wrapper.bottom {
   animation: bottom 1s;
 }
+.wrapper.off {
+  animation: off 1.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
 .popup {
   width: 100%;
   height: 100%;
@@ -80,5 +85,15 @@
   to {
     transform: scaleY(1);
     transform-origin: 0 100%;
+  }
+}
+@keyframes off {
+  from {
+    transform: scaleX(1);
+    transform-origin: 100% 0;
+  }
+  to {
+    transform: scaleX(0);
+    transform-origin: 100% 0;
   }
 }
