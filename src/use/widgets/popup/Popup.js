@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
 import styles from './Popup.module.scss';
 
-const Popup = ({ children, effects }) => {
-  const [test, setTest] = useState(true)
+const Popup = ({ children, effects, button = 'Button' }) => {
+  const [display, setDisplay] = useState(null)
   return (
     <>
-      {test &&
-        <div className={`${styles.wrapper} ${styles[effects]}`}>
-          <div className={`${styles.popup} ${styles[effects]}`}>
-            <button onClick={() => { setTest(!test) }}>asdfasd</button>
-            {children}
-            {test ? 1 : 0}
-          </div>
+      <div className={styles.popupButton} onClick={() => { setDisplay('on') }}>{button}</div>
+      <div className={`${styles.wrapper} ${styles[effects]} ${display === 'on' && styles.on} ${display === 'off' && styles.off}`}>
+        <div className={styles.popupButton} onClick={() => { setDisplay('off') }}>{button}</div>
+        <div className={`${styles.popup} ${styles[effects]} ${display === 'on' && styles.on} ${display === 'off' && styles.off}`}>
+          {children}
         </div>
-      }
+      </div>
     </>
   );
 };
