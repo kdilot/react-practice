@@ -1,3 +1,39 @@
+.popupButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  @media only screen and (min-width: 500px) {
+    width: 70%;
+    margin: 1rem 15%;
+  }
+  @media only screen and (min-width: 700px) {
+    width: 60%;
+    margin: 1rem 20%;
+  }
+  @media only screen and (min-width: 1000px) {
+    width: 40%;
+    margin: 1rem 30%;
+  }
+  @media only screen and (min-width: 1300px) {
+    width: 30%;
+    margin: 1rem 35%;
+  }
+  @media only screen and (min-width: 1800px) {
+    width: 20%;
+    margin: 1rem 40%;
+  }
+}
+.popupButton:hover {
+  background: gray;
+  color: white;
+}
 .wrapper {
   position: absolute;
   top: 0;
