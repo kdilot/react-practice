@@ -12,13 +12,13 @@ const Button = ({
   onClick,
   padding,
   radius,
-  size = 'md',
+  size = 'medium',
   styleName,
 }) => {
   return (
     <>
       <button
-        className={` ${styles.btn} ${size === 'lg' ? styles.btn__lg : size === 'sm' ? styles.btn__sm : styles.btn__md} ${full && styles.btn__full} ${styles[`btn__${styleName}`]} `}
+        className={` ${styles.btn} ${size ? styles[size] : ''} ${full ? styles.full : ''} ${styles[styleName]} `}
         style={{
           background: background,
           border: border,
