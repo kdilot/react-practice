@@ -18,34 +18,34 @@
 .btn:focus {
   outline: none;
 }
-.btn__sm {
+.small {
   font-size: 0.8rem;
   @include btn-style(0.3rem, 2rem, 2rem);
 }
-.btn__md {
+.medium {
   @include btn-style(0.5rem, 2.3rem, 2.3rem);
 }
-.btn__lg {
+.large {
   font-size: 1.2rem;
   @include btn-style(1rem, 2.5rem, 2.5rem);
 }
-.btn__full {
+.full {
   width: 100%;
   height: 100%;
   margin: 0;
 }
-.btn__fade:hover {
+.fade:hover {
   background: $hover;
   color: $hoverFont;
   transition-duration: 0.5s;
 }
 
-.btn__fade__lr {
+.fadeLeftRight {
   transition-property: color;
   transition-duration: 0.5s;
   transform: translateZ(0);
 }
-.btn__fade__lr:before {
+.fadeLeftRight:before {
   content: "";
   position: absolute;
   top: 0;
@@ -58,19 +58,19 @@
   transform-origin: 0 100%;
   transition-duration: 0.5s;
 }
-.btn__fade__lr:hover {
+.fadeLeftRight:hover {
   color: $hoverFont;
 }
-.btn__fade__lr:hover:before {
+.fadeLeftRight:hover:before {
   transform: scaleX(1);
 }
 
-.btn__fade__rl {
+.fadeRightLeft {
   transition-property: color;
   transition-duration: 0.5s;
   transform: translateZ(0);
 }
-.btn__fade__rl:before {
+.fadeRightLeft:before {
   content: "";
   position: absolute;
   top: 0;
@@ -83,19 +83,19 @@
   transform-origin: 100% 0;
   transition-duration: 0.5s;
 }
-.btn__fade__rl:hover {
+.fadeRightLeft:hover {
   color: $hoverFont;
 }
-.btn__fade__rl:hover:before {
+.fadeRightLeft:hover:before {
   transform: scaleX(1);
 }
 
-.btn__fade__tb {
+.fadeTopBottom {
   transition-property: color;
   transition-duration: 0.5s;
   transform: translateZ(0);
 }
-.btn__fade__tb:before {
+.fadeTopBottom:before {
   content: "";
   position: absolute;
   top: 0;
@@ -108,19 +108,19 @@
   transform-origin: 100% 0;
   transition-duration: 0.5s;
 }
-.btn__fade__tb:hover {
+.fadeTopBottom:hover {
   color: $hoverFont;
 }
-.btn__fade__tb:hover:before {
+.fadeTopBottom:hover:before {
   transform: scaleY(1);
 }
 
-.btn__fade__bt {
+.fadeBottomTop {
   transition-property: color;
   transition-duration: 0.5s;
   transform: translateZ(0);
 }
-.btn__fade__bt:before {
+.fadeBottomTop:before {
   content: "";
   position: absolute;
   top: 0;
@@ -133,19 +133,19 @@
   transform-origin: 0 100%;
   transition-duration: 0.5s;
 }
-.btn__fade__bt:hover {
+.fadeBottomTop:hover {
   color: $hoverFont;
 }
-.btn__fade__bt:hover:before {
+.fadeBottomTop:hover:before {
   transform: scaleY(1);
 }
 
-.btn__fade__ho {
+.fadeHorizontalOut {
   transition-property: color;
   transition-duration: 0.5s;
   transform: translateZ(0);
 }
-.btn__fade__ho:before {
+.fadeHorizontalOut:before {
   content: "";
   position: absolute;
   top: 0;
@@ -158,20 +158,20 @@
   transform-origin: 50% 0;
   transition-duration: 0.5s;
 }
-.btn__fade__ho:hover {
+.fadeHorizontalOut:hover {
   color: $hoverFont;
 }
-.btn__fade__ho:hover:before {
+.fadeHorizontalOut:hover:before {
   transform: scaleX(1);
 }
 
-.btn__fade__hi {
+.fadeHorizontalIn {
   transition-property: color;
   transition-duration: 0.5s;
   transform: translateZ(0);
   background: $hover;
 }
-.btn__fade__hi:before {
+.fadeHorizontalIn:before {
   content: "";
   position: absolute;
   top: 0;
@@ -184,19 +184,19 @@
   transform-origin: 50%;
   transition-duration: 0.5s;
 }
-.btn__fade__hi:hover {
+.fadeHorizontalIn:hover {
   color: $hoverFont;
 }
-.btn__fade__hi:hover:before {
+.fadeHorizontalIn:hover:before {
   transform: scaleX(0);
 }
 
-.btn__fade__vo {
+.fadeVerticalOut {
   transition-property: color;
   transition-duration: 0.5s;
   transform: translateZ(0);
 }
-.btn__fade__vo:before {
+.fadeVerticalOut:before {
   content: "";
   position: absolute;
   top: 0;
@@ -209,20 +209,20 @@
   transform-origin: 0 50%;
   transition-duration: 0.5s;
 }
-.btn__fade__vo:hover {
+.fadeVerticalOut:hover {
   color: $hoverFont;
 }
-.btn__fade__vo:hover:before {
+.fadeVerticalOut:hover:before {
   transform: scaleY(1);
 }
 
-.btn__fade__vi {
+.fadeVerticalIn {
   transition-property: color;
   transition-duration: 0.5s;
   transform: translateZ(0);
   background: $hover;
 }
-.btn__fade__vi:before {
+.fadeVerticalIn:before {
   content: "";
   position: absolute;
   top: 0;
@@ -235,19 +235,19 @@
   transform-origin: 50%;
   transition-duration: 0.5s;
 }
-.btn__fade__vi:hover {
+.fadeVerticalIn:hover {
   color: $hoverFont;
 }
-.btn__fade__vi:hover:before {
+.fadeVerticalIn:hover:before {
   transform: scaleY(0);
 }
 
-.btn__topline__lr {
+.toplineLeftRight {
   transition-property: color;
   transition-duration: 0.5s;
   transform: translateZ(0);
 }
-.btn__topline__lr:before {
+.toplineLeftRight:before {
   content: "";
   position: absolute;
   top: 0;
@@ -261,16 +261,16 @@
   transform-origin: 0 100%;
   transition-duration: 0.5s;
 }
-.btn__topline__lr:hover:before {
+.toplineLeftRight:hover:before {
   transform: scaleX(1);
 }
 
-.btn__topline__rl {
+.toplineRightLeft {
   transition-property: color;
   transition-duration: 0.5s;
   transform: translateZ(0);
 }
-.btn__topline__rl:before {
+.toplineRightLeft:before {
   content: "";
   position: absolute;
   top: 0;
@@ -284,16 +284,16 @@
   transform-origin: 100% 0;
   transition-duration: 0.5s;
 }
-.btn__topline__rl:hover:before {
+.toplineRightLeft:hover:before {
   transform: scaleX(1);
 }
 
-.btn__topline__ho {
+.toplineHorizontalOut {
   transition-property: color;
   transition-duration: 0.5s;
   transform: translateZ(0);
 }
-.btn__topline__ho:before {
+.toplineHorizontalOut:before {
   content: "";
   position: absolute;
   top: 0;
@@ -307,16 +307,16 @@
   transform-origin: 50% 0;
   transition-duration: 0.5s;
 }
-.btn__topline__ho:hover:before {
+.toplineHorizontalOut:hover:before {
   transform: scaleX(1);
 }
 
-.btn__bottomline__lr {
+.bottomlineLeftRight {
   transition-property: color;
   transition-duration: 0.5s;
   transform: translateZ(0);
 }
-.btn__bottomline__lr:before {
+.bottomlineLeftRight:before {
   content: "";
   position: absolute;
   top: 100;
@@ -330,16 +330,16 @@
   transform-origin: 0 100%;
   transition-duration: 0.5s;
 }
-.btn__bottomline__lr:hover:before {
+.bottomlineLeftRight:hover:before {
   transform: scaleX(1);
 }
 
-.btn__bottomline__rl {
+.bottomlineRightLeft {
   transition-property: color;
   transition-duration: 0.5s;
   transform: translateZ(0);
 }
-.btn__bottomline__rl:before {
+.bottomlineRightLeft:before {
   content: "";
   position: absolute;
   top: 100;
@@ -353,16 +353,16 @@
   transform-origin: 100% 0;
   transition-duration: 0.5s;
 }
-.btn__bottomline__rl:hover:before {
+.bottomlineRightLeft:hover:before {
   transform: scaleX(1);
 }
 
-.btn__bottomline__ho {
+.bottomlineHorizontalOut {
   transition-property: color;
   transition-duration: 0.5s;
   transform: translateZ(0);
 }
-.btn__bottomline__ho:before {
+.bottomlineHorizontalOut:before {
   content: "";
   position: absolute;
   top: 100;
@@ -376,58 +376,58 @@
   transform-origin: 50% 0;
   transition-duration: 0.5s;
 }
-.btn__bottomline__ho:hover:before {
+.bottomlineHorizontalOut:hover:before {
   transform: scaleX(1);
 }
 
-.btn__round {
+.round {
   color: $font;
   transition-duration: 0.5s;
   border-radius: 0;
 }
-.btn__round:hover {
+.round:hover {
   background: $hover;
   color: $hoverFont;
   transition-duration: 0.5s;
   border-radius: 15px;
 }
 
-.btn__sizeup {
+.sizeUp {
   transition-duration: 0.5s;
 }
-.btn__sizeup:hover {
+.sizeUp:hover {
   background: $hover;
   color: $hoverFont;
   transform: scale(1.2);
   transition-duration: 0.5s;
 }
 
-.btn__sizedown {
+.sizeDown {
   transition-duration: 0.5s;
 }
-.btn__sizedown:hover {
+.sizeDown:hover {
   background: $hover;
   color: $hoverFont;
   transform: scale(0.8);
   transition-duration: 0.5s;
 }
 
-.btn__pull:hover {
+.pull:hover {
   animation: pullEffect 0.5s;
 }
 
-.btn__push:hover {
+.push:hover {
   animation: pushEffect 0.5s;
 }
 
-.btn__outline__shrink {
+.outlineShrink {
   position: relative;
 }
-.btn__outline__shrink:hover {
+.outlineShrink:hover {
   background: $hover;
   color: $hoverFont;
 }
-.btn__outline__shrink:before {
+.outlineShrink:before {
   position: absolute;
   content: "";
   border: 5px solid $hover;
@@ -439,18 +439,18 @@
   transition-property: top, left, right, bottom;
   transition-duration: 0.5s;
 }
-.btn__outline__shrink:hover:before {
+.outlineShrink:hover:before {
   animation: outlineShrink 0.5s infinite;
 }
 
-.btn__outline__spread {
+.outlineSpread {
   position: relative;
 }
-.btn__outline__spread:hover {
+.outlineSpread:hover {
   background: $hover;
   color: $hoverFont;
 }
-.btn__outline__spread:before {
+.outlineSpread:before {
   position: absolute;
   content: "";
   border: 5px solid $hover;
@@ -462,84 +462,84 @@
   transition-property: top, left, right, bottom;
   transition-duration: 0.5s;
 }
-.btn__outline__spread:hover:before {
+.outlineSpread:hover:before {
   opacity: 1;
   animation: outlineSpread 0.5s infinite;
 }
 
-.btn__shake__horizontal:hover {
+.shakeHorizontal:hover {
   background: $hover;
   color: $hoverFont;
   animation: shakeHor 0.3s infinite;
 }
 
-.btn__shake__vertical:hover {
+.shakeVertical:hover {
   background: $hover;
   color: $hoverFont;
   animation: shakeVer 0.3s infinite;
 }
 
-.btn__shake__twist:hover {
+.shakeTwist:hover {
   background: $hover;
   color: $hoverFont;
   animation: shakeTwist 0.2s infinite;
 }
 
-.btn__blinking:hover {
+.blinking:hover {
   background: $hover;
   color: $hoverFont;
   animation: blinking 0.5s infinite;
 }
 
-.btn__sizeSpread:hover {
+.sizeSpread:hover {
   animation: sizeSpread 0.5s linear 1;
   animation-fill-mode: forwards;
 }
 
-.btn__sizeShrink:hover {
+.sizeShrink:hover {
   animation: sizeShrink 0.5s linear 1;
   animation-fill-mode: forwards;
 }
 
-.btn__hideTop {
+.hideTop {
   transition-duration: 0.7s;
   transform: scaleY(1);
   transform-origin: top;
 }
-.btn__hideTop:hover {
+.hideTop:hover {
   transform: scaleY(0);
   background: $hover;
   color: $hoverFont;
 }
 
-.btn__hideBottom {
+.hideBottom {
   transition-duration: 0.7s;
   transform: scaleY(1);
   transform-origin: bottom;
 }
-.btn__hideBottom:hover {
+.hideBottom:hover {
   transform: scaleY(0);
   background: $hover;
   color: $hoverFont;
 }
 
-.btn__hideLeft {
+.hideLeft {
   transition-duration: 0.7s;
   transform: scaleX(1);
   transform-origin: left;
 }
-.btn__hideLeft:hover {
+.hideLeft:hover {
   transform: scaleX(0);
   background: $hover;
   color: $hoverFont;
 }
 
-.btn__hideRight {
+.hideRight {
   transition-duration: 0.7s;
   transform: scaleX(1);
   transform-origin: right;
 }
-.btn__hideRight:hover {
+.hideRight:hover {
   transform: scaleX(0);
   background: $hover;
   color: $hoverFont;
