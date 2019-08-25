@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { ScrollGage } from 'use/widgets';
 import styles from './InfiniteScroll.module.scss';
 
 const InfiniteScroll = () => {
   const [data, setData] = useState(Array.from({ length: 5 }))
   const [percentage, setPercentage] = useState(0)
   const [currentScroll, setScroll] = useState(window.pageYOffset)
-  
+
   useEffect(() => {
     const handleScroll = () => {
       setScroll(window.pageYOffset)
@@ -24,13 +25,16 @@ const InfiniteScroll = () => {
   }, [percentage])
 
   return (
-    <div className={styles.wrapper}>
-      {data.map((m, i) =>
-        <div className={styles.item} key={i}>
-          {i + 1}
-        </div>
-      )}
-    </div>
+    <>
+      <div><ScrollGage percentage={percentage} /></div>
+      <div className={styles.wrapper}>
+        {data.map((m, i) =>
+          <div className={styles.item} key={i}>
+            {i + 1}
+          </div>
+        )}
+      </div>
+    </>
   );
 };
 
